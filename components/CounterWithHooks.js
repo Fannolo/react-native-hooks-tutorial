@@ -5,8 +5,10 @@ import { View, Text, Image } from "react-native";
 function useCount(count) {
   const [hiddenText, setHiddenText] = useState(false);
   useEffect(() => {
-    if (count > 19) {
+    if (count >= 10 && count < 30) {
       setHiddenText(true);
+    } else {
+      setHiddenText(false);
     }
   }, [count]);
 
@@ -22,7 +24,9 @@ export function CounterWithHooks({ count }) {
   const hiddenText = useCount(count);
   return (
     <View>
-      <Text>You clicked {count} times.</Text>
+      <Text>
+        You clicked {count} times. Powered by React functional component
+      </Text>
       {hiddenText && (
         <Image
           style={{ width: 300, height: 200 }}
