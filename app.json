@@ -1,0 +1,12 @@
+{
+  "name": "react-native-hooks-tutorial",
+  "displayName": "react-native-hooks-tutorial",
+  "expo": {
+    "name": "react-native-hooks-tutorial",
+    "slug": "react-native-hooks-tutorial",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
